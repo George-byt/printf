@@ -15,12 +15,6 @@ int _printf(const char *format, ...)
 	va_start(args, format);
 	for (index = 0; format != NULL && format[index] != '\0'; index++)
 	{
-		while (format[index] != '%' || format[index] != '\\')
-		{
-			_putchar(format[index]);
-			index++;
-		}
-
 		if (format[index] == '%')
 			switch (format[index + 1])
 			{
@@ -44,10 +38,15 @@ int _printf(const char *format, ...)
 				index += 2;
 				break;
 			}
-		if (format[index] == '\\')
+		else if (format[index] == '\\')
 		{
 			printescape(format[index + 1]);
 			index += 2;
+		}
+		else
+		{
+			_putchar(format[index]);
+			index++;
 		}
 	}
 	return (0);
