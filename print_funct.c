@@ -25,3 +25,21 @@ number = va_arg(arg, int);
 count = print_num(number, count);
 return (count);
 }
+/**
+ * print_str - function that print a string
+ *@lalista: list that contains the format inserted
+ *Return: tot
+ */
+int print_str(va_list arg)
+{
+char *str;
+int i;
+str = va_arg(arg, char *);
+if (str == NULL)
+str = "(null)";
+for (i = 0; str[i] != '\0'; i++)
+{
+_putchar(str[i]);
+}
+return (i);
+}
