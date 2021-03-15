@@ -13,6 +13,7 @@ int _printf(const char *format, ...)
 	va_list args;
 
 	va_start(args, format);
+
 	for (index = 0; format != NULL && format[index] != '\0'; index++)
 	{
 		while (format[index] != '%' || format[index] != '\\')
@@ -39,6 +40,10 @@ int _printf(const char *format, ...)
 				write(1, "%", 1);
 				index += 2;
 				break;
+			case 'd':
+			  length += print_integer(args);
+			  index++;
+			  break;
 			default:
 				_putchar(format[index]);
 				index += 2;
