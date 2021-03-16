@@ -65,10 +65,7 @@ int print_str(va_list arg)
 int noformat(char index)
 {
         if (index == '\0')
-                return (-1);
-        else
-        {
-                _putchar('%');
-                return (-1);
-        }
+		return (-1);
+	_putchar('%');
+	return (-1);
 }
