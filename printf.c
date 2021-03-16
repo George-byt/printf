@@ -49,7 +49,7 @@ int funct_format(va_list args, const char *format)
 				length += (print_integer(args) - 1);
 				break;
 			case 'i':
-				length += print_integer(args);
+				length += (print_integer(args) - 1);
 				break;
 			default:
 				index += noformat(format[index + 1]);
