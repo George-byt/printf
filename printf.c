@@ -46,7 +46,7 @@ int funct_format(va_list args, const char *format)
 				_putchar('%');
 				break;
 			case 'd':
-				length += print_integer(args);
+				length += (print_integer(args) - 1);
 				break;
 			case 'i':
 				length += print_integer(args);
