@@ -1,4 +1,4 @@
-#include "holberton.h"
+include "holberton.h"
 /**
  * print_num - recursive function to print a number.
  * @n: number to print.
@@ -19,23 +19,24 @@ int print_num(int n, int c)
  */
 int print_integer(va_list arg)
 {
-int number;
-int count = 0;
-unsigned int unumber;
-number = va_arg(arg, int);
-if (number < 0)
-{
-unumber = number * -1;
-_putchar('-');
-count = print_num(unumber, count);
-count += 1;
-}
-else
-{
-unumber = number;
-count = print_num(unumber, count);
-}
-return (count);
+	int number;
+	int count = 0;
+	unsigned int unumber;
+
+	number = va_arg(arg, int);
+	if (number < 0)
+	{
+		unumber = number * -1;
+		_putchar('-');
+		count = print_num(unumber, count);
+		count += 1;
+	}
+	else
+	{
+		unumber = number;
+		count = print_num(unumber, count);
+	}
+	return (count);
 }
 /**
  * print_str - function that print a string
