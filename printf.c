@@ -54,8 +54,7 @@ int funct_format(va_list args, const char *format)
 				length += print_integer(args);
 				break;
 			default:
-				_putchar('%');
-				index--;
+				index += noformat(format[index + 1]);
 				break;
 			}
 			index++;
