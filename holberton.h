@@ -8,6 +8,9 @@
 
 int _printf(const char *format, ...);
 void printescape(char a);
+int print_str(va_list arg);
+int print_num(int n, int c);
+int print_integer(va_list arg);
 int _putchar(char c);
 
 #endif /*HOLBERTON_H*/
