@@ -2,7 +2,7 @@
 /**
  * _printf - imitate printf function
  * @format: string
- * Return: 0
+ * Return: length.
  */
 int _printf(const char *format, ...)
 {
