@@ -13,5 +13,6 @@ int print_num(int n, int c);
 int print_integer(va_list arg);
 int funct_format(va_list args, const char *format);
 int _putchar(char c);
+int noformat(char index);
 
 #endif /*HOLBERTON_H*/
