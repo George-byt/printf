@@ -33,8 +33,6 @@ int funct_format(va_list args, const char *format)
 	{
 		if (format[index] == '%')
 		{
-			if (!format[index])
-				return (-1);
 			switch (format[index + 1])
 			{
 			case 'c':
