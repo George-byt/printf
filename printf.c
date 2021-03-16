@@ -6,7 +6,7 @@
  */
 int _printf(const char *format, ...)
 {
-	int length = 0, index;
+int length = 0, index;
 	va_list args;
 
 	va_start(args, format);
@@ -50,4 +50,3 @@ int _printf(const char *format, ...)
 		}
 	}
 	return (length);
-}
