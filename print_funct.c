@@ -57,3 +57,18 @@ int print_str(va_list arg)
 	}
 	return (i);
 }
+/**
+ * noformat - handle cases where % doesn't match anything
+ * @index: character ahead of %
+ * Return: always -1
+ */
+int noformat(char index)
+{
+        if (index == '\0')
+                return (-1);
+        else
+        {
+                _putchar('%');
+                return (-1);
+        }
+}
