@@ -1,0 +1,21 @@
+("emacs" "printf.c")
+Loading 00debian-vars...done
+For information about GNU Emacs and the GNU system, type C-h C-a.
+Loading cc-langs...done
+Loading vc-git...done
+Auto-saving...done
+Auto-saving...done
+Auto-saving...done
+Auto-saving...done
+Auto-saving...done
+Auto-saving...done
+Auto-saving...done
+byte-code: End of buffer [5 times]
+Auto-saving...
+byte-code: End of buffer [5 times]
+Auto-saving...done
+Type C-h for help. [2 times]
+save-buffers-kill-emacs: Command attempted to use minibuffer while in minibuffer
+user-error: Beginning of history; no preceding item [3 times]
+completing-read-default: Command attempted to use minibuffer while in minibuffer
+save-buffers-kill-emacs: Command attempted to use minibuffer while in minibuffer
