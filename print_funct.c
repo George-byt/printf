@@ -28,7 +28,7 @@ int print_integer(va_list arg)
 	{
 		unumber = number * -1;
 		_putchar('-');
-		if (number == INT_MIN)
+		if (number == -2147483648)
 		{
 			count += 1;
 			count += print_num(unumber / 10, count);
