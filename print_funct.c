@@ -28,8 +28,17 @@ int print_integer(va_list arg)
 	{
 		unumber = number * -1;
 		_putchar('-');
-		count = print_num(unumber, count);
-		count += 1;
+		if (number == INT_MIN)
+		{
+			count += 1;
+			count += print_num(unumber / 10, count);
+			_putchar('8');
+		}
+		else
+		{
+			count += print_num(unumber, count);
+			count += 1;
+		}
 	}
 	else
 	{
@@ -64,7 +73,7 @@ int print_str(va_list arg)
  */
 int noformat(char index)
 {
-        if (index == '\0')
+	if (index == '\0')
 		return (-1);
 	_putchar('%');
 	return (-1);
