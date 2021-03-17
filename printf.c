@@ -46,11 +46,11 @@ int funct_format(va_list args, const char *format)
 				_putchar('%');
 				break;
 			case 'd':
-				length += (print_integer(args) - 1);
-				break;
 			case 'i':
 				length += (print_integer(args) - 1);
 				break;
+			case '\0':
+				return (-1);
 			default:
 				index += noformat(format[index + 1]);
 				break;
